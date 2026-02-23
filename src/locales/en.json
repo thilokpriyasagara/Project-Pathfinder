@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "home": "Home",
+    "pathways": "Pathways",
+    "opportunities": "Opportunities",
+    "fields": "Career Fields",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Find Your True Path",
+    "hero_subtitle": "Confused about what to do next? Explore higher education and vocational training opportunities in Sri Lanka tailored for school leavers.",
+    "cta_start": "Start the Finder",
+    "cta_explore": "Explore Opportunities",
+    "features_1_title": "Explore 50+ Fields",
+    "features_1_desc": "From IT and Engineering to Healthcare and Hospitality.",
+    "features_2_title": "Government Validated",
+    "features_2_desc": "Details directly from NVQ and national gazettes.",
+    "features_3_title": "Career Focused",
+    "features_3_desc": "Practical steps to start earning and learning.",
+    "card_1": "Vocational Training",
+    "card_2": "Career Ready"
+  },
+  "about": {
+    "title": "About PathFinder",
+    "p1": "PathFinder is an educational career guidance initiative designed specifically for Sri Lankan school leavers.",
+    "p2": "Our mission is to help O/L and A/L students understand that University is not the only path to a successful career. By highlighting government-backed vocational training courses (NVQ) and creating tailored pathway recommendations, we aim to build a skilled, competent, and highly employable youth demographic in Sri Lanka.",
+    "p3": "We rely on transparent data from the Vocational Training Authority (VTA) and other national entities to provide reliable advice directly to students."
+  },
+  "careerFields": {
+    "title": "Explore Career Fields",
+    "subtitle": "Discover structured career profiles and the vocational pathways to enter them.",
+    "fields": {
+      "it": "Information Technology",
+      "engineering": "Electrical & Engineering",
+      "hospitality": "Hospitality & Tourism",
+      "creative": "Creative & Media",
+      "business": "Business & Finance",
+      "healthcare": "Healthcare & Services"
+    },
+    "card_desc": "Explore various sub-disciplines, potential earnings, and starting NVQ levels.",
+    "view_btn": "View Field"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Need specific guidance? We can connect you to the appropriate government counseling services or vocational training centers.",
+    "helpline": {
+      "title": "Helpline",
+      "desc": "Call our educational consultants.",
+      "value": "1934 (VTA Hotline)"
+    },
+    "email": {
+      "title": "Email Support",
+      "desc": "Send us an email for detailed queries."
+    }
+  },
+  "opportunities": {
+    "title": "Latest Opportunities & Gazettes",
+    "subtitle": "Stay updated with the latest government gazettes, vocational training intakes, and professional courses available for school leavers across Sri Lanka.",
+    "categories": {
+      "All": "All",
+      "IT": "IT",
+      "Engineering": "Engineering",
+      "Hospitality": "Hospitality",
+      "Creative": "Creative",
+      "Healthcare": "Healthcare"
+    },
+    "status": {
+      "urgent": "Closing Soon",
+      "open": "Open"
+    },
+    "deadline_prefix": "Deadline: ",
+    "view_details": "View Details",
+    "empty_state": "No current openings found for this category. Please check back later.",
+    "mock_data": {
+      "1": {
+        "title": "NVQ Level 4 - Software Engineering Intake",
+        "institute": "Vocational Training Authority (VTA)",
+        "location": "Island-wide Centers"
+      },
+      "2": {
+        "title": "Diploma in Automotive Technology",
+        "institute": "Ceylon German Technical Training Institute (CGTTI)",
+        "location": "Moratuwa"
+      },
+      "3": {
+        "title": "Hospitality Management Certification",
+        "institute": "Sri Lanka Institute of Tourism & Hotel Management",
+        "location": "Colombo"
+      },
+      "4": {
+        "title": "Graphic Design & Multimedia",
+        "institute": "National Youth Services Council (NYSC)",
+        "location": "Maharagama"
+      }
+    }
+  },
+  "pathwayFinder": {
+    "title": "Pathway Finder",
+    "subtitle": "Answer a few questions to find the best education and career options for you.",
+    "steps": {
+      "focus": "Focus",
+      "academics": "Academics",
+      "interests": "Interests",
+      "results": "Results"
+    },
+    "step1": {
+      "title": "What is your highest completed education level?",
+      "ol": {
+        "title": "G.C.E. O/L",
+        "desc": "I have completed my Ordinary Level exams."
+      },
+      "al": {
+        "title": "G.C.E. A/L",
+        "desc": "I have completed my Advanced Level exams."
+      },
+      "next": "Next"
+    },
+    "step2": {
+      "title": "How did you perform? (Optional)",
+      "desc": "This helps us recommend the exact NVQ level or foundation course you are eligible for.",
+      "label": "Select your overall result range:",
+      "options": {
+        "default": "Select an option",
+        "passed": "Passed all core subjects",
+        "some": "Passed some subjects",
+        "failed": "Did not pass"
+      },
+      "alert_title": "Don't worry!",
+      "alert_desc": "Even if you didn't pass, there are many vocational pathways available that start from the basics.",
+      "back": "Back",
+      "next": "Next"
+    },
+    "step3": {
+      "title": "What fields interest you the most?",
+      "fields": {
+        "IT": "IT",
+        "Engineering": "Engineering",
+        "Business": "Business",
+        "Healthcare": "Healthcare",
+        "Creative": "Creative"
+      },
+      "back": "Back",
+      "next": "Show My Pathways"
+    },
+    "step4": {
+      "title": "Your Recommended Pathways",
+      "subtitle": "Based on your profile, here are the best next steps for you.",
+      "badge_prefix": "Match #",
+      "learn_more": "Learn More",
+      "explore_more": "Want to explore other options?",
+      "start_over": "Start Over"
+    },
+    "results_data": {
+      "ol_it": {
+        "title": "Diploma in IT / Software Engineering",
+        "desc": "Start with an NVQ Level 4 certificate in IT directly after O/Ls."
+      },
+      "ol_eng": {
+        "title": "Certificate in Auto Mechanics / Electrical",
+        "desc": "Join a Technical College for hands-on engineering skills."
+      },
+      "al_it": {
+        "title": "HND in Computing",
+        "desc": "A 2-year Higher National Diploma leading to a top-up degree."
+      },
+      "al_eng": {
+        "title": "NDT / HNDE",
+        "desc": "National Diploma in Technology or Engineering for A/L physical science students."
+      },
+      "al_bus": {
+        "title": "AAT / Charted Accountancy Foundation",
+        "desc": "Start your professional finance journey immediately."
+      },
+      "fallback_counseling": {
+        "title": "Career Guidance Counseling",
+        "desc": "Visit your nearest NAITA branch for personalized counseling."
+      },
+      "fallback_al": {
+        "title": "Open University Sri Lanka",
+        "desc": "Explore foundation courses in your area of interest."
+      },
+      "fallback_ol": {
+        "title": "Vocational Training Authority (VTA)",
+        "desc": "Find certificates in various trades starting at NVQ Level 3."
+      }
+    }
+  }
+}
