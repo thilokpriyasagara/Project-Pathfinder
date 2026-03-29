@@ -6,12 +6,11 @@ const Contact: React.FC = () => {
     const { t } = useLanguage();
 
     return (
-        <div className="container mt-8 pb-8">
-            <div className="text-center mb-12">
-                <h1 className="section-title mb-2">{t('contact.title')}</h1>
-                <p className="text-secondary max-w-2xl mx-auto">
-                    {t('contact.subtitle')}
-                </p>
+        <div className="container page-wrapper">
+            <div className="page-header">
+                <span className="section-label">Contact</span>
+                <h1 className="section-title">{t('contact.title')}</h1>
+                <p>{t('contact.subtitle')}</p>
             </div>
 
             <div className="grid-2-cols max-w-2xl mx-auto">

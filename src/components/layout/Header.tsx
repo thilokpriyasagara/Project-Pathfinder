@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
-import { Compass, Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 
 const Header: React.FC = () => {
     const { language, setLanguage, t } = useLanguage();
@@ -24,8 +24,7 @@ const Header: React.FC = () => {
         <header className="header">
             <div className="container header-container">
                 <Link to="/" className="brand">
-                    <Compass className="brand-icon" />
-                    <span className="brand-text">PathFinder</span>
+                    <img src="/logo.png" alt="InfoMind" style={{ height: '80px', objectFit: 'contain' }} />
                 </Link>
 
                 {/* Desktop Navigation */}

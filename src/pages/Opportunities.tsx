@@ -69,12 +69,11 @@ const Opportunities: React.FC = () => {
     );
 
     return (
-        <div className="container mt-8 pb-8">
-            <div className="opportunities-header text-center mb-8">
-                <h1 className="section-title mb-2">{t('opportunities.title')}</h1>
-                <p className="text-secondary max-w-2xl mx-auto">
-                    {t('opportunities.subtitle')}
-                </p>
+        <div className="container page-wrapper">
+            <div className="page-header">
+                <span className="section-label">Opportunities</span>
+                <h1 className="section-title">{t('opportunities.title')}</h1>
+                <p>{t('opportunities.subtitle')}</p>
             </div>
 
             <div className="filters-scroll-wrapper mb-8">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PlayCircle, FileQuestion, ChevronDown, ChevronUp } from 'lucide-react';
+import './Resources.css';
 
 const FAQ_DATA = [
     { question: "What should I do if I fail my A/L exams?", answer: "Don't panic! You can either retake the exams or immediately start a vocational training program (NVQ level 4 or 5) depending on your O/L results. Many successful professionals started through the vocational route." },
@@ -11,17 +12,16 @@ const Resources: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
 
     return (
-        <div className="container mt-8 pb-8">
-            <div className="text-center mb-8">
-                <h1 className="section-title mb-2">Awareness & Guidance Resources</h1>
-                <p className="text-secondary max-w-2xl mx-auto">
-                    Explore articles, videos, and FAQs designed to help you make the right choice for your future.
-                </p>
+        <div className="container page-wrapper">
+            <div className="page-header">
+                <span className="section-label">Resources</span>
+                <h1 className="section-title">Awareness &amp; Guidance Resources</h1>
+                <p>Explore articles, videos, and FAQs designed to help you make the right choice for your future.</p>
             </div>
 
             {/* Myths vs Facts section */}
             <section className="mb-12">
-                <h2 className="text-xl fw-600 mb-6">Common Myths vs Facts</h2>
+                <h2 className="resources-section-heading">Common Myths vs Facts</h2>
                 <div className="grid-2-cols">
                     <div className="card-box bg-red-light">
                         <h3 className="text-danger mb-2">Myth: University is the only path to success.</h3>
@@ -36,9 +36,7 @@ const Resources: React.FC = () => {
 
             {/* Video Guides */}
             <section className="mb-12">
-                <div className="flex-between mb-6">
-                    <h2 className="text-xl fw-600">Video Guides</h2>
-                </div>
+                <h2 className="resources-section-heading">Video Guides</h2>
                 <div className="grid-3-cols">
                     {[1, 2, 3].map(i => (
                         <div key={i} className="video-card box-shadow-sm">
@@ -56,9 +54,7 @@ const Resources: React.FC = () => {
 
             {/* FAQs */}
             <section className="mb-8">
-                <div className="flex-between mb-6">
-                    <h2 className="text-xl fw-600 flex-center gap-2"><FileQuestion /> Frequently Asked Questions</h2>
-                </div>
+                <h2 className="resources-section-heading"><FileQuestion size={22} /> Frequently Asked Questions</h2>
                 <div className="faq-container">
                     {FAQ_DATA.map((faq, idx) => (
                         <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>

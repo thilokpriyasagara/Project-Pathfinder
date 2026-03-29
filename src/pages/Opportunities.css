@@ -1,26 +1,18 @@
-.opportunities-header {
-    margin-bottom: 2rem;
-}
+/* ══════════════════════════════════════════════
+   OPPORTUNITIES PAGE
+   ══════════════════════════════════════════════ */
 
-.max-w-2xl {
-    max-width: 42rem;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Category Filters */
+/* ── Category filter strip ──────────────────── */
 .filters-scroll-wrapper {
     overflow-x: auto;
     padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
     -webkit-overflow-scrolling: touch;
 }
 
 .filters-container {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.625rem;
     justify-content: center;
     min-width: max-content;
 }
@@ -32,12 +24,15 @@
 }
 
 .filter-btn {
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.1rem;
+    border-radius: 9999px;
+    border: 1.5px solid var(--border-color);
     background-color: var(--surface-color);
     color: var(--text-secondary);
     font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    font-family: inherit;
     transition: all 0.2s;
     white-space: nowrap;
 }
@@ -45,19 +40,22 @@
 .filter-btn:hover {
     border-color: var(--primary);
     color: var(--primary);
+    background: #EFF6FF;
 }
 
 .filter-btn.active {
     background-color: var(--primary);
     color: white;
     border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-/* Opportunities Grid */
+/* ── Opportunities grid ─────────────────────── */
 .opportunities-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -66,35 +64,61 @@
     }
 }
 
+/* ── Opportunity card ───────────────────────── */
 .opportunity-card {
     background-color: white;
-    border: 1px solid var(--border-color);
+    border: 1.5px solid var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 1.75rem;
+    transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+    position: relative;
+    overflow: hidden;
+}
+
+.opportunity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.22s;
 }
 
 .opportunity-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+.opportunity-card:hover::before {
+    opacity: 1;
 }
 
 .opp-header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 1rem;
+    gap: 0.5rem;
 }
 
 .status-badge {
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 9999px;
 }
 
 .status-badge.open {
-    background-color: #D1FAE5;
-    color: #065F46;
+    background-color: #DCFCE7;
+    color: #15803D;
 }
 
 .status-badge.urgent {
@@ -107,12 +131,14 @@
     font-weight: 500;
     color: var(--text-secondary);
     background-color: var(--bg-color);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.6rem;
     border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
 }
 
 .opp-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
     line-height: 1.4;
@@ -122,6 +148,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .opp-meta {
@@ -132,43 +159,31 @@
     font-size: 0.875rem;
 }
 
-.text-danger {
-    color: var(--danger);
-}
-
-.fw-600 {
-    font-weight: 600;
-}
-
-.flex-between {
+.opp-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .opp-type {
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.8125rem;
+    font-weight: 600;
     color: var(--text-secondary);
     background-color: var(--bg-color);
-    padding: 0.25rem 0.6rem;
+    padding: 0.25rem 0.65rem;
     border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
 }
 
-.btn-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 0.875rem;
-}
-
+/* ── Empty state ────────────────────────────── */
 .empty-state {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     background-color: var(--surface-color);
-    border-radius: var(--radius-md);
+    border: 1.5px dashed var(--border-color);
+    border-radius: var(--radius-lg);
     color: var(--text-secondary);
 }

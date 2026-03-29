@@ -7,7 +7,7 @@ type Language = 'en' | 'si';
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
+  t: (key: string, options?: { returnObjects?: boolean }) => any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -20,7 +20,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     si: siTranslations,
   };
 
-  const t = (key: string): string => {
+  const t = (key: string, options?: { returnObjects?: boolean }): any => {
     const keys = key.split('.');
     let value = translations[language];
     for (const k of keys) {

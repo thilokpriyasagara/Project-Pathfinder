@@ -1,0 +1,228 @@
+{
+  "architecture_engineering": {
+    "overview": "Architecture & Engineering focuses on designing, building, and improving the physical world. In Sri Lanka, it remains a prestigious and technically demanding field.",
+    "roles": [
+      "Architect: Design buildings with attention to aesthetics, space, and functionality.",
+      "Civil Engineer: Design and manage structures, infrastructure, drainage, and construction systems.",
+      "Biomedical Engineer: Work with medical technologies, devices, and hospital equipment."
+    ],
+    "education": [
+      "5-year academic route leading to Chartered Architect status (Architecture).",
+      "4-year engineering degree leading to Chartered Engineer status (Engineering).",
+      "Bridge courses in AutoCAD, Revit, Basic Surveying, and Graphic Design."
+    ],
+    "trends": "Continuous technical demand and prestige; requires strong technical preparation and often an aptitude test or strong Z-score for state routes.",
+    "institutions": [
+      "University of Moratuwa",
+      "University of Peradeniya",
+      "City School of Architecture",
+      "SLIIT",
+      "IESL",
+      "NSBM Green University"
+    ]
+  },
+  "arts_design": {
+    "overview": "Arts, Design & Entertainment is highly fast-growing powered by digital media, branding, marketing, and content creation.",
+    "roles": [
+      "Graphic Designer / Visual Communicator: Create visual content for brands, campaigns, interfaces.",
+      "Fashion Designer: Design clothing, understand materials, and contribute to the apparel industry.",
+      "Animator & VFX Artist: Produce motion graphics, 2D/3D animation, and visual effects."
+    ],
+    "education": [
+      "State university degree with high Z-score and aptitude test.",
+      "Private school design programs (require A/L passes and portfolio).",
+      "Short courses in Canva, Photoshop, Illustrator, Blender."
+    ],
+    "trends": "Strong growth driven by digital media; highly values a strong portfolio (like Behance) over traditional academics.",
+    "institutions": [
+      "AMDT School of Creativity",
+      "Academy of Design (AOD)",
+      "University of the Visual & Performing Arts",
+      "University of Moratuwa",
+      "SLIIT"
+    ]
+  },
+  "business_management": {
+    "overview": "A versatile field supporting every major industry. Highly popular in Sri Lanka due to combining degrees with professional qualifications like CIMA.",
+    "roles": [
+      "Human Resources Manager: Handle recruitment, training, employee relations.",
+      "Accountant / Financial Controller: Manage financial records, taxation, reporting.",
+      "Business Development Manager: Drive company growth through partnerships and new customers."
+    ],
+    "education": [
+      "State University degrees (Commerce stream, requires Z-score).",
+      "External Degrees (require 3 C passes in relevant subjects).",
+      "Professional qualifications: CIMA, ACCA, CA Sri Lanka, CIPM, CIM."
+    ],
+    "trends": "Steady demand across all sectors; success heavily depends on combining foundational academics with professional networking and English skills.",
+    "institutions": [
+      "University of Sri Jayewardenepura",
+      "University of Colombo",
+      "SLIIT Business School",
+      "IIT / APIIT",
+      "NSBM Green University"
+    ]
+  },
+  "education": {
+    "overview": "Education is a respected, stable profession in Sri Lanka, opening pathways into government schools, private institutions, and higher education.",
+    "roles": [
+      "School Teacher: Teach, mentor, and guide students in classrooms.",
+      "School Principal / Administrator: Lead schools, manage operations, staff, budgets, policies.",
+      "Lecturer / Professor: Teach in universities and contribute to academic research."
+    ],
+    "education": [
+      "National Colleges of Education (NCoE) for 3-year National Diploma in Teaching.",
+      "State university B.Ed. degrees (e.g., Colombo, Open University).",
+      "Private institute trainee teacher and diploma pathways, plus UK TKT certification."
+    ],
+    "trends": "Consistent government demand (announced via Gazette); English-medium and international school pathways highly value practical exposure and language proficiency.",
+    "institutions": [
+      "National Colleges of Education (NCoE)",
+      "Open University of Sri Lanka",
+      "Horizon Campus",
+      "Lyceum Campus",
+      "Gateway Graduate School"
+    ]
+  },
+  "future_tech": {
+    "overview": "Future Tech includes AI, Cloud, and Blockchain. It is a globally connected sector offering strong remote work and excellent foreign-income opportunities.",
+    "roles": [
+      "AI & Machine Learning Engineer: Build intelligent systems and prediction models.",
+      "Cloud Architect: Design secure, scalable cloud systems using AWS and Azure.",
+      "Blockchain Developer: Build decentralized systems and smart contracts."
+    ],
+    "education": [
+      "State AI routes (Mathematical stream, high Z-score).",
+      "Private routes and pathways (SLIIT, IIT) with bridging support.",
+      "Professional certs: AWS Cloud, IIT Cert in AI, Web3 platforms."
+    ],
+    "trends": "Massive global demand curve; emphasis on continuous learning, Python programming, Mathematics, and decentralized systems.",
+    "institutions": [
+      "SLIIT",
+      "IIT",
+      "UCSC (Computer Science)",
+      "Online Global Certifications (AWS, Google)"
+    ]
+  },
+  "healthcare_medicine": {
+    "overview": "A highly respected and stable career sector providing strong public-sector demand alongside growing private-sector and overseas opportunities.",
+    "roles": [
+      "Surgeon / Doctor (MBBS): Diagnose illnesses, treat patients, perform surgery.",
+      "Nurse / Nurse Practitioner: Provide patient care, administer treatment, monitor recovery.",
+      "Physiotherapist: Help patients recover movement and function."
+    ],
+    "education": [
+      "5-year MBBS + 1-year internship (State Medical Faculties).",
+      "Government Nursing Schools (NTS) requiring 3 S passes in A/Ls.",
+      "Private Healthcare Diplomas (IIHS, Amrak, Asiri) requiring careful SLMC/SLNC verification."
+    ],
+    "trends": "High demand abroad for nursing and caregiving. Increasing availability of structured private health science diplomas in Sri Lanka.",
+    "institutions": [
+      "State Medical Faculties (Colombo, Peradeniya, etc.)",
+      "Ministry of Health Nurses Training Schools (NTS)",
+      "IIHS",
+      "Amrak / Asiri Academy / Lanka Hospitals Academy",
+      "KDU"
+    ]
+  },
+  "hospitality_tourism": {
+    "overview": "A dynamic, fast-growing industry offering global careers in hotels, travel, events, and food service for students who enjoy communication and dynamic environments.",
+    "roles": [
+      "Hotel & Resort Management: Manage guest experience, front office, food & beverage.",
+      "Culinary Arts: Work as professional chefs in kitchens and luxury hospitality settings.",
+      "Travel & Event Management: Plan tours, events, conferences, and destination experiences."
+    ],
+    "education": [
+      "SLITHM National Diploma (requires 3 S passes, O/L English).",
+      "Degree routes accepting 3 S passes in any stream.",
+      "Craft level courses starting from directly after O/Ls."
+    ],
+    "trends": "Vibrant post-pandemic recovery in Sri Lanka; highly reliant on spoken English, customer service etiquette, and practical training.",
+    "institutions": [
+      "SLITHM",
+      "William Angliss @ SLIIT",
+      "NSBM Green University",
+      "Cinnamon Hospitality Academy"
+    ]
+  },
+  "knowledge_based": {
+    "overview": "Professions built on formal qualifications, legal recognition, and professional licensing (Medicine, Law, Chartered Finance).",
+    "roles": [
+      "Doctor (MBBS): Medical practitioner requiring SLMC registration.",
+      "Lawyer (LLB / Attorney-at-Law): Legal professional requiring professional qualification to practise.",
+      "Chartered Accountant / Finance: Financial expert requiring body membership (CA, CIMA)."
+    ],
+    "education": [
+      "State University degrees (LLB, MBBS).",
+      "Sri Lanka Law College entrance route.",
+      "Professional qualifications starting directly after 3 S passes."
+    ],
+    "trends": "Highly stable, prestigious, long-term careers. They require the longest training periods and strict adherence to professional boards.",
+    "institutions": [
+      "State Universities & Medical Faculties",
+      "Sri Lanka Law College",
+      "CA Sri Lanka / CIMA / ACCA"
+    ]
+  },
+  "science_research": {
+    "overview": "Ideal for curious, analytical students interested in discovery. Supports critical industries such as healthcare, agriculture, and environmental management.",
+    "roles": [
+      "Microbiologist: Study microorganisms for healthcare and agriculture.",
+      "Physicist: Work in research, medical physics, and telecommunications.",
+      "Environmental Scientist: Create solutions for sustainability and conservation."
+    ],
+    "education": [
+      "State internal BSc routes (require 3 S passes in Science stream).",
+      "External BSc programs (Colombo/UCSC).",
+      "Laboratory Technology Diplomas & Foundation programs."
+    ],
+    "trends": "Growing focus on green tech and sustainability. Benefits greatly from programming skills like Python and R.",
+    "institutions": [
+      "University of Colombo",
+      "University of Sri Jayewardenepura",
+      "University of Peradeniya",
+      "Open University of Sri Lanka",
+      "NIFS"
+    ]
+  },
+  "skill_based": {
+    "overview": "The fastest route to employment and financial independence in Sri Lanka. Supported by the professional, globally recognized NVQ system.",
+    "roles": [
+      "Electrician: Install and repair electrical systems in homes, businesses, factories.",
+      "HVAC / Refrigeration Technician: Install and maintain cooling and air-conditioning systems.",
+      "Solar Technician: Specialize in solar power systems installations."
+    ],
+    "education": [
+      "NVQ Levels 3 to 4 (Basic to Full Craftsman).",
+      "NVQ Levels 5 to 6 (Technician / Supervisor level).",
+      "NVQ Level 7 (Bachelor-level pathway)."
+    ],
+    "trends": "Very high local and foreign demand for properly certified (NVQ) technical craftsmen; excellent opportunities for entrepreneurship.",
+    "institutions": [
+      "German Tech (CGTTI)",
+      "Vocational Training Authority (VTA)",
+      "National Apprentice & Industrial Training Authority (NAITA)"
+    ]
+  },
+  "tech_computing": {
+    "overview": "One of the most stable and high-paying fields, offering remote work and foreign company roles as Sri Lanka moves into a digital economy.",
+    "roles": [
+      "Software Developer: Build applications, websites, mobile apps, and systems.",
+      "Cybersecurity Analyst: Protect systems, networks, and data from cyber threats.",
+      "Data Scientist: Analyze data to find patterns and support decision-making."
+    ],
+    "education": [
+      "State university internal degrees (Maths/ICT background).",
+      "UCSC BIT external degree (3 S passes in any stream).",
+      "SLIIT BSc IT (Arts/Commerce students can enter via bridging programs)."
+    ],
+    "trends": "Exceptional job demand, extremely strong salary growth, and globally transferable skills across all technology sub-domains.",
+    "institutions": [
+      "University of Moratuwa",
+      "UCSC",
+      "SLIIT",
+      "IIT",
+      "NSBM"
+    ]
+  }
+}

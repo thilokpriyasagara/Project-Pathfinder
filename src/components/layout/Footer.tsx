@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <footer className="footer">
             <div className="container footer-grid">
                 <div className="footer-col">
-                    <h3 className="footer-brand">PathFinder</h3>
+                    <h3 className="footer-brand">InfoMind</h3>
                     <p className="footer-desc">
                         Your friendly guide to higher education and vocational training opportunities in Sri Lanka.
                         Empowering school leavers to make informed career choices.
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="footer-bottom">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} PathFinder. Educational Platform.</p>
+                    <p>&copy; {new Date().getFullYear()} InfoMind. Educational Platform.</p>
                 </div>
             </div>
         </footer>

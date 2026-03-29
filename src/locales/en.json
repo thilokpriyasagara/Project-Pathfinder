@@ -9,18 +9,51 @@
     "contact": "Contact"
   },
   "home": {
-    "hero_title": "Find Your True Path",
-    "hero_subtitle": "Confused about what to do next? Explore higher education and vocational training opportunities in Sri Lanka tailored for school leavers.",
-    "cta_start": "Start the Finder",
-    "cta_explore": "Explore Opportunities",
-    "features_1_title": "Explore 50+ Fields",
-    "features_1_desc": "From IT and Engineering to Healthcare and Hospitality.",
-    "features_2_title": "Government Validated",
-    "features_2_desc": "Details directly from NVQ and national gazettes.",
-    "features_3_title": "Career Focused",
-    "features_3_desc": "Practical steps to start earning and learning.",
-    "card_1": "Vocational Training",
-    "card_2": "Career Ready"
+    "hero_title": "Ready for the next step after",
+    "hero_title_highlight": "O/L & A/L?",
+    "hero_subtitle": "Now is the perfect time to start planning your future. Discover clear and simple information about university education, vocational training, technical courses, and other opportunities across Sri Lanka. Choose the path that suits you best and move confidently toward your dreams.",
+    "cta_start": "Explore Pathways",
+    "cta_explore": "View Opportunities",
+    "quick_actions": {
+      "pathways_title": "Explore Pathways",
+      "pathways_desc": "Discover education routes after O/L & A/L",
+      "opportunities_title": "View Opportunities",
+      "opportunities_desc": "Internships, scholarships & training",
+      "fields_title": "Discover Career fields",
+      "fields_desc": "Explore growing industries",
+      "resources_title": "Resources",
+      "resources_desc": "Guides to help you decide"
+    },
+    "why_awareness_title": "Why Career Awareness Is Essential?",
+    "why_awareness_subtitle": "Build your future on strong decisions",
+    "why_awareness_1": "Competitive University Admission",
+    "why_awareness_2": "Expanding Skill Based Alternatives",
+    "why_awareness_3": "Clear Career Planning is Essential",
+    "why_awareness_4": "Access to Trusted Information",
+    "career_fields_title": "Which Career Field Matches You?",
+    "field_1": "Engineering & Technology",
+    "field_2": "IT & Computing",
+    "field_3": "Health & Medical",
+    "field_4": "Business & Finance",
+    "field_5": "Hospitality & Tourism",
+    "field_6": "Agriculture & Environment",
+    "field_7": "Arts & Media",
+    "btn_explore_fields": "Explore Fields",
+    "stats_fields": "Career Fields",
+    "stats_opps": "Opportunities",
+    "stats_coverage": "Islandwide Coverage",
+    "stats_updated": "Updated Monthly",
+    "insights_title": "Career Insights & Guidance",
+    "insight_1_title": "Choosing the Right Path After O/L & A/L",
+    "insight_1_desc": "A simple guide to selecting your next step.",
+    "insight_2_title": "Understanding Vocational & NVQ Training",
+    "insight_2_desc": "Benefits of skill-based education.",
+    "insight_3_title": "Fast Growing Career Fields in Sri Lanka",
+    "insight_3_desc": "Industries with increasing demand.",
+    "btn_all_resources": "View All Resources",
+    "success_title": "Student Success Stories",
+    "success_quote_1": "From the resource page",
+    "success_quote_2": "From the resource page"
   },
   "about": {
     "title": "About PathFinder",
@@ -30,17 +63,250 @@
   },
   "careerFields": {
     "title": "Explore Career Fields",
-    "subtitle": "Discover structured career profiles and the vocational pathways to enter them.",
+    "subtitle": "Discover career opportunities with clear pathways from education to success.",
     "fields": {
-      "it": "Information Technology",
-      "engineering": "Electrical & Engineering",
-      "hospitality": "Hospitality & Tourism",
-      "creative": "Creative & Media",
-      "business": "Business & Finance",
-      "healthcare": "Healthcare & Services"
+      "tech_computing": "Technology & Computing",
+      "business_management": "Business Management & Administration",
+      "healthcare_medicine": "Healthcare & Medicine",
+      "architecture_engineering": "Architecture & Engineering",
+      "arts_design": "Arts, Design & Entertainment",
+      "science_research": "Science & Research",
+      "education": "Education",
+      "skill_based": "Skill Based",
+      "future_tech": "Future Tech",
+      "knowledge_based": "Knowledge Based",
+      "hospitality_tourism": "Hospitality & Tourism"
     },
     "card_desc": "Explore various sub-disciplines, potential earnings, and starting NVQ levels.",
-    "view_btn": "View Field"
+    "view_btn": "View Field",
+    "details": {
+      "architecture_engineering": {
+        "overview": "A career in Architecture & Engineering is about turning what if into what is. In Sri Lanka, these professionals are the ones who design our skyline, build our highways, and develop the medical technology used in our hospitals. For a student finishing school, this field is highly technical and requires a strong foundation in Mathematics and Science, but it also offers some of the most prestigious Chartered status roles in the country.",
+        "roles": [
+          "Architect: Design buildings with attention to aesthetics, space, and functionality.",
+          "Civil Engineer: Design and manage structures, infrastructure, drainage, and construction systems.",
+          "Biomedical Engineer: Work with medical technologies, devices, and hospital equipment."
+        ],
+        "education": [
+          "5-year academic route leading to Chartered Architect status (Architecture).",
+          "4-year engineering degree leading to Chartered Engineer status (Engineering).",
+          "Bridge courses in AutoCAD, Revit, Basic Surveying, and Graphic Design."
+        ],
+        "trends": "Continuous technical demand and prestige; requires strong technical preparation and often an aptitude test or strong Z-score for state routes.",
+        "institutions": [
+          "University of Moratuwa",
+          "University of Peradeniya",
+          "City School of Architecture",
+          "SLIIT",
+          "IESL",
+          "NSBM Green University"
+        ]
+      },
+      "arts_design": {
+        "overview": "A career in Arts, Design & Entertainment is about the power of visual storytelling and creative problem-solving. In Sri Lanka, this field has transformed from being seen as just a hobby to a massive professional industry. With the rise of digital marketing, e-commerce, and the global demand for content, creative professionals in Sri Lanka are now some of the most sought-after experts by both local agencies and international tech firms. ",
+        "roles": [
+          "Graphic Designer / Visual Communicator: Create visual content for brands, campaigns, interfaces.",
+          "Fashion Designer: Design clothing, understand materials, and contribute to the apparel industry.",
+          "Animator & VFX Artist: Produce motion graphics, 2D/3D animation, and visual effects."
+        ],
+        "education": [
+          "State university degree with high Z-score and aptitude test.",
+          "Private school design programs (require A/L passes and portfolio).",
+          "Short courses in Canva, Photoshop, Illustrator, Blender."
+        ],
+        "trends": "Strong growth driven by digital media; highly values a strong portfolio (like Behance) over traditional academics.",
+        "institutions": [
+          "AMDT School of Creativity",
+          "Academy of Design (AOD)",
+          "University of the Visual & Performing Arts",
+          "University of Moratuwa",
+          "SLIIT"
+        ]
+      },
+      "business_management": {
+        "overview": "A career in Business, Management & Administration is the backbone of the global economy. In Sri Lanka, this field is incredibly popular because it offers versatility-every single industry, from a small tea plantation to a massive tech firm like Virtusa, needs managers, accountants, and growth experts to function. For a school leaver, this field is unique because you can start professional qualifications (like CIMA or ACCA) even before you get your A/L results.",
+        "roles": [
+          "Human Resources Manager: Handle recruitment, training, employee relations.",
+          "Accountant / Financial Controller: Manage financial records, taxation, reporting.",
+          "Business Development Manager: Drive company growth through partnerships and new customers."
+        ],
+        "education": [
+          "State University degrees (Commerce stream, requires Z-score).",
+          "External Degrees (require 3 C passes in relevant subjects).",
+          "Professional qualifications: CIMA, ACCA, CA Sri Lanka, CIPM, CIM."
+        ],
+        "trends": "Steady demand across all sectors; success heavily depends on combining foundational academics with professional networking and English skills.",
+        "institutions": [
+          "University of Sri Jayewardenepura",
+          "University of Colombo",
+          "SLIIT Business School",
+          "IIT / APIIT",
+          "NSBM Green University"
+        ]
+      },
+      "education": {
+        "overview": "A career in Education & Training in Sri Lanka is about more than just standing at a blackboard; it is about shaping the future mindset of the country. In Sri Lanka, the Guru-Sishya (Teacher-Student) relationship is deeply respected, and the career path is very stable, offering structured progression from a classroom teacher to school leadership or academic research. Whether you want to work in a rural government school, an elite international school in Colombo, or a university, this field offers a clear roadmap for school leavers.",
+        "roles": [
+          "School Teacher: Teach, mentor, and guide students in classrooms.",
+          "School Principal / Administrator: Lead schools, manage operations, staff, budgets, policies.",
+          "Lecturer / Professor: Teach in universities and contribute to academic research."
+        ],
+        "education": [
+          "National Colleges of Education (NCoE) for 3-year National Diploma in Teaching.",
+          "State university B.Ed. degrees (e.g., Colombo, Open University).",
+          "Private institute trainee teacher and diploma pathways, plus UK TKT certification."
+        ],
+        "trends": "Consistent government demand (announced via Gazette); English-medium and international school pathways highly value practical exposure and language proficiency.",
+        "institutions": [
+          "National Colleges of Education (NCoE)",
+          "Open University of Sri Lanka",
+          "Horizon Campus",
+          "Lyceum Campus",
+          "Gateway Graduate School"
+        ]
+      },
+      "future_tech": {
+        "overview": "Choosing a career in Future Tech (AI, Cloud, and Blockchain) means positioning yourself at the absolute frontier of the digital economy. In Sri Lanka, this field is unique because it is largely location independent you can work for a Silicon Valley startup or a Dubai-based fintech firm while sitting in a cafe in Colombo, often earning in foreign currency or dollar-pegged salaries.",
+        "roles": [
+          "AI & Machine Learning Engineer: Build intelligent systems and prediction models.",
+          "Cloud Architect: Design secure, scalable cloud systems using AWS and Azure.",
+          "Blockchain Developer: Build decentralized systems and smart contracts."
+        ],
+        "education": [
+          "State AI routes (Mathematical stream, high Z-score).",
+          "Private routes and pathways (SLIIT, IIT) with bridging support.",
+          "Professional certs: AWS Cloud, IIT Cert in AI, Web3 platforms."
+        ],
+        "trends": "Massive global demand curve; emphasis on continuous learning, Python programming, Mathematics, and decentralized systems.",
+        "institutions": [
+          "SLIIT",
+          "IIT",
+          "UCSC (Computer Science)",
+          "Online Global Certifications (AWS, Google)"
+        ]
+      },
+      "healthcare_medicine": {
+        "overview": "A career in Healthcare & Medicine is perhaps the most respected and noble path in Sri Lanka. It's a field where you don't just work, but directly impact human lives. For a student finishing school, it offers immense job security-because the need for healthcare professionals never goes away-and it provides a clear, structured career path from trainee to specialist. In Sri Lanka, the healthcare system is a mix of high-demand government roles and a rapidly growing private sector. ",
+        "roles": [
+          "Surgeon / Doctor (MBBS): Diagnose illnesses, treat patients, perform surgery.",
+          "Nurse / Nurse Practitioner: Provide patient care, administer treatment, monitor recovery.",
+          "Physiotherapist: Help patients recover movement and function."
+        ],
+        "education": [
+          "5-year MBBS + 1-year internship (State Medical Faculties).",
+          "Government Nursing Schools (NTS) requiring 3 S passes in A/Ls.",
+          "Private Healthcare Diplomas (IIHS, Amrak, Asiri) requiring careful SLMC/SLNC verification."
+        ],
+        "trends": "High demand abroad for nursing and caregiving. Increasing availability of structured private health science diplomas in Sri Lanka.",
+        "institutions": [
+          "State Medical Faculties (Colombo, Peradeniya, etc.)",
+          "Ministry of Health Nurses Training Schools (NTS)",
+          "IIHS",
+          "Amrak / Asiri Academy / Lanka Hospitals Academy",
+          "KDU"
+        ]
+      },
+      "hospitality_tourism": {
+        "overview": "A career in Hospitality & Tourism is about the Art of Service. In Sri Lanka, this is one of the fastest-growing sectors and a major pillar of the national economy. With the country being named a top global travel destination for 2026, the demand for professionally trained staff in luxury resorts, travel agencies, and airlines has never been higher. For a school leaver, this field is perfect if you enjoy meeting new people, have a flair for communication, and want a career that can literally take you around the world.",
+        "roles": [
+          "Hotel & Resort Management: Manage guest experience, front office, food & beverage.",
+          "Culinary Arts: Work as professional chefs in kitchens and luxury hospitality settings.",
+          "Travel & Event Management: Plan tours, events, conferences, and destination experiences."
+        ],
+        "education": [
+          "SLITHM National Diploma (requires 3 S passes, O/L English).",
+          "Degree routes accepting 3 S passes in any stream.",
+          "Craft level courses starting from directly after O/Ls."
+        ],
+        "trends": "Vibrant post-pandemic recovery in Sri Lanka; highly reliant on spoken English, customer service etiquette, and practical training.",
+        "institutions": [
+          "SLITHM",
+          "William Angliss @ SLIIT",
+          "NSBM Green University",
+          "Cinnamon Hospitality Academy"
+        ]
+      },
+      "knowledge_based": {
+        "overview": "A career in the Knowledge-Based field is centered on Professional Authority. In Sri Lanka, these roles  like Doctors, Lawyers, and Accountants are governed by strict legal frameworks. You cannot simply do the job; you must be legally called to the bar, registered with the council, or chartered after years of rigorous academic and practical training. For a schooler, this path is the most stable but also the most demanding, often requiring a 4-6 year commitment before you can even begin to practice.",
+        "roles": [
+          "Doctor (MBBS): Medical practitioner requiring SLMC registration.",
+          "Lawyer (LLB / Attorney-at-Law): Legal professional requiring professional qualification to practise.",
+          "Chartered Accountant / Finance: Financial expert requiring body membership (CA, CIMA)."
+        ],
+        "education": [
+          "State University degrees (LLB, MBBS).",
+          "Sri Lanka Law College entrance route.",
+          "Professional qualifications starting directly after 3 S passes."
+        ],
+        "trends": "Highly stable, prestigious, long-term careers. They require the longest training periods and strict adherence to professional boards.",
+        "institutions": [
+          "State Universities & Medical Faculties",
+          "Sri Lanka Law College",
+          "CA Sri Lanka / CIMA / ACCA"
+        ]
+      },
+      "science_research": {
+        "overview": "A career in Science & Research is for those who are naturally curious and want to discover how the world works at its most fundamental level. In Sri Lanka, this field is no longer restricted to just being a teacher; it has expanded into high-tech industries, environmental conservation, and global research collaborations. Whether you are looking at the stars, the microscopic world of bacteria, or the health of our forests, this field allows you to contribute to the Knowledge Economy of the country.",
+        "roles": [
+          "Microbiologist: Study microorganisms for healthcare and agriculture.",
+          "Physicist: Work in research, medical physics, and telecommunications.",
+          "Environmental Scientist: Create solutions for sustainability and conservation."
+        ],
+        "education": [
+          "State internal BSc routes (require 3 S passes in Science stream).",
+          "External BSc programs (Colombo/UCSC).",
+          "Laboratory Technology Diplomas & Foundation programs."
+        ],
+        "trends": "Growing focus on green tech and sustainability. Benefits greatly from programming skills like Python and R.",
+        "institutions": [
+          "University of Colombo",
+          "University of Sri Jayewardenepura",
+          "University of Peradeniya",
+          "Open University of Sri Lanka",
+          "NIFS"
+        ]
+      },
+      "skill_based": {
+        "overview": "A career in Skills-Based Trades is about mastering a craft. In Sri Lanka, this field has moved away from the old helper model to a highly professional, tech-driven sector. With the National Vocational Qualification (NVQ) system, a technician in Sri Lanka is now a certified professional who can command high salaries locally or work anywhere in the world. For a school leaver, this is the fastest route to financial independence, often taking only 6 to 18 months to become job-ready.",
+        "roles": [
+          "Electrician: Install and repair electrical systems in homes, businesses, factories.",
+          "HVAC / Refrigeration Technician: Install and maintain cooling and air-conditioning systems.",
+          "Solar Technician: Specialize in solar power systems installations."
+        ],
+        "education": [
+          "NVQ Levels 3 to 4 (Basic to Full Craftsman).",
+          "NVQ Levels 5 to 6 (Technician / Supervisor level).",
+          "NVQ Level 7 (Bachelor-level pathway)."
+        ],
+        "trends": "Very high local and foreign demand for properly certified (NVQ) technical craftsmen; excellent opportunities for entrepreneurship.",
+        "institutions": [
+          "German Tech (CGTTI)",
+          "Vocational Training Authority (VTA)",
+          "National Apprentice & Industrial Training Authority (NAITA)"
+        ]
+      },
+      "tech_computing": {
+        "overview": "Choosing a career in Technology & Computing is one of the most stable and high-paying decisions you can make in Sri Lanka today. As the country moves toward a digital economy, the Silicon Island vision is creating thousands of jobs that don't just pay in LKR, but often offer dollar-pegged salaries or opportunities to work for global companies from your home in Sri Lanka.",
+        "roles": [
+          "Software Developer: Build applications, websites, mobile apps, and systems.",
+          "Cybersecurity Analyst: Protect systems, networks, and data from cyber threats.",
+          "Data Scientist: Analyze data to find patterns and support decision-making."
+        ],
+        "education": [
+          "State university internal degrees (Maths/ICT background).",
+          "UCSC BIT external degree (3 S passes in any stream).",
+          "SLIIT BSc IT (Arts/Commerce students can enter via bridging programs)."
+        ],
+        "trends": "Exceptional job demand, extremely strong salary growth, and globally transferable skills across all technology sub-domains.",
+        "institutions": [
+          "University of Moratuwa",
+          "UCSC",
+          "SLIIT",
+          "IIT",
+          "NSBM"
+        ]
+      }
+    }
   },
   "contact": {
     "title": "Get in Touch",
