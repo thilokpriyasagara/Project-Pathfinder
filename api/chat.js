@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
   if (!apiKey) {
     return res.status(200).json({
-      answer: '⚠️ Setup error: GEMINI_API_KEY is not set in Vercel environment variables. Please add it in Vercel → Settings → Environment Variables, then redeploy.'
+      answer: '⚠️ GEMINI_API_KEY is not set. Add it in Vercel → Settings → Environment Variables, then redeploy.'
     });
   }
 
@@ -61,12 +61,13 @@ ${KNOWLEDGE}
 QUESTION:
 ${question}`;
 
-  // Try models in order of preference
   const models = [
-    'gemini-1.5-flash',
-    'gemini-1.5-flash-8b',
-    'gemini-pro'
+    'gemini-2.5-flash',
+    'gemini-2.0-flash',
+    'gemini-1.5-flash'
   ];
+
+  const errors = [];
 
   for (const model of models) {
     try {
@@ -86,16 +87,9 @@ ${question}`;
 
       if (!response.ok) {
         const errText = await response.text();
-        console.error(`Model ${model} failed with ${response.status}: ${errText}`);
-
-        // If API key is invalid (403), return a clear message immediately
-        if (response.status === 403 || response.status === 400) {
-          return res.status(200).json({
-            answer: `⚠️ API Error (${response.status}): Your Gemini API key may be invalid or not have access. Please check your GEMINI_API_KEY in Vercel settings.`
-          });
-        }
-
-        // Try next model for other errors
+        const errMsg = `${model}: HTTP ${response.status} - ${errText.substring(0, 200)}`;
+        errors.push(errMsg);
+        console.error(errMsg);
         continue;
       }
 
@@ -106,17 +100,15 @@ ${question}`;
         return res.status(200).json({ answer });
       }
 
-      // No answer from this model, try next
-      console.warn(`Model ${model} returned empty answer`);
-
+      errors.push(`${model}: empty response`);
     } catch (err) {
-      console.error(`Model ${model} threw:`, err.message);
-      // Try next model
+      errors.push(`${model}: ${err.message}`);
+      console.error(`${model} error:`, err.message);
     }
   }
 
-  // All models failed
+  // All models failed - show the actual errors so user can diagnose
   return res.status(200).json({
-    answer: '⚠️ All AI models are currently unavailable. Please try again in a moment.'
+    answer: `⚠️ All models failed. Debug info:\n\n${errors.join('\n\n')}\n\nAPI key starts with: ${apiKey.substring(0, 8)}...`
   });
 }
