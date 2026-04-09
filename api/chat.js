@@ -101,20 +101,20 @@ ${question}
 
     // Try main model first
     try {
-      data = await callGeminiWithRetry("gemini-2.5-flash");
+      data = await callGeminiWithRetry("gemini-2.0-flash");
     } catch (err) {
       console.warn("Primary model failed, switching to fallback...");
 
       // Fallback model
-      data = await callGeminiWithRetry("gemini-2.5-flash-lite");
+      data = await callGeminiWithRetry("gemini-1.5-flash");
     }
 
     const answer =
       data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
 
     if (!answer) {
-      return res.status(500).json({
-        error: "Invalid response from AI"
+      return res.status(200).json({
+        answer: "AI is currently busy. Please try again in a few seconds."
       });
     }
 
