@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-    ArrowLeft, BookOpen, Clock, TrendingUp, Database,
+    ArrowLeft, Clock, TrendingUp, Database,
     Shield, Cpu, Car, Megaphone, Leaf, Brain, Zap,
     Globe, MapPin
 } from 'lucide-react';
