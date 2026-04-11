@@ -80,7 +80,7 @@ const Home: React.FC = () => {
             <section className="awareness-section">
                 <div className="container">
                     <div className="section-label">
-                        <Lightbulb size={16} /> Why It Matters
+                        <Lightbulb size={16} /> {t('home.labels.why_it_matters')}
                     </div>
                     <h2 className="section-heading">{t('home.why_awareness_title')}</h2>
                     <p className="section-sub">{t('home.why_awareness_subtitle')}</p>
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
                 <div className="fields-section-bg" />
                 <div className="container">
                     <div className="section-label">
-                        <Compass size={16} /> Explore Fields
+                        <Compass size={16} /> {t('home.labels.explore_fields')}
                     </div>
                     <h2 className="section-heading">{t('home.career_fields_title')}</h2>
 
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             <section className="insights-section">
                 <div className="container">
                     <div className="section-label">
-                        <FileText size={16} /> Resources
+                        <FileText size={16} /> {t('home.labels.resources')}
                     </div>
                     <h2 className="section-heading">{t('home.insights_title')}</h2>
 
@@ -160,8 +160,15 @@ const Home: React.FC = () => {
                                 </div>
                                 <h3>{ins.title}</h3>
                                 <p>{ins.desc}</p>
-                                <Link to="/resources" className="insight-read-link">
-                                    Read More <ChevronRight size={14} />
+                                <Link
+                                    to={
+                                        i === 0 ? "/blog/choosing-right-path" :
+                                        i === 1 ? "/blog/vocational-nvq-training" :
+                                        "/blog/career-fields-sri-lanka"
+                                    }
+                                    className="insight-read-link"
+                                >
+                                    {t('home.insights_cta.read_more')} <ChevronRight size={14} />
                                 </Link>
                             </div>
                         ))}
@@ -179,10 +186,10 @@ const Home: React.FC = () => {
             <section className="stories-section">
                 <div className="container">
                     <div className="section-label">
-                        <Star size={16} /> Success Stories
+                        <Star size={16} /> {t('home.labels.success_stories')}
                     </div>
                     <h2 className="section-heading">{t('home.success_title')}</h2>
-                    <p className="section-sub">Real stories from alumni who turned vocational training into global careers.</p>
+                    <p className="section-sub">{t('home.success.section_sub')}</p>
 
                     <div className="stories-grid-v2">
                         {/* ── Story Card 1: Imesh Abeysundara ────────── */}
@@ -194,16 +201,16 @@ const Home: React.FC = () => {
                             <div className="story-card-body">
                                 <div className="story-card-badge">
                                     <Coffee size={14} />
-                                    <span>Culinary Entrepreneur</span>
+                                    <span>{t('home.success.stories.imesh.badge')}</span>
                                 </div>
                                 <h3 className="story-card-name">Imesh Abeysundara</h3>
-                                <p className="story-card-subtitle">From Dubai Kitchens to Sri Lankan Entrepreneur</p>
+                                <p className="story-card-subtitle">{t('home.success.stories.imesh.subtitle')}</p>
                                 <blockquote className="story-card-quote">
-                                    "My journey started with a simple passion for cooking, which eventually led me to the fast-paced, high-pressure commercial kitchens of Dubai. For 12 years, I worked in top-tier restaurants, mastering the culinary arts. Today, I've brought all that international experience back home to Sri Lanka to build my own restaurant."
+                                    {t('home.success.stories.imesh.quote')}
                                 </blockquote>
                                 <div className="story-card-takeaway">
                                     <Quote size={16} className="takeaway-quote-icon" />
-                                    <p>A vocational skill like the culinary arts, paired with discipline and hard work, can take you around the world.</p>
+                                    <p>{t('home.success.stories.imesh.takeaway')}</p>
                                 </div>
                             </div>
                         </div>
@@ -217,16 +224,16 @@ const Home: React.FC = () => {
                             <div className="story-card-body">
                                 <div className="story-card-badge">
                                     <Flame size={14} />
-                                    <span>Welding Specialist & Mentor</span>
+                                    <span>{t('home.success.stories.nuri.badge')}</span>
                                 </div>
                                 <h3 className="story-card-name">Nuri Dissanayake</h3>
-                                <p className="story-card-subtitle">From NAITA Sparks to Global Engineering Projects</p>
+                                <p className="story-card-subtitle">{t('home.success.stories.nuri.subtitle')}</p>
                                 <blockquote className="story-card-quote">
-                                    "My journey began with the sparks of a welding torch at NAITA. That solid technical foundation gave me the confidence to move from a local workshop to specializing in advanced, high-demand fields like underwater welding and robotic systems on massive global projects. Today, I'm proud to mentor future engineers."
+                                    {t('home.success.stories.nuri.quote')}
                                 </blockquote>
                                 <div className="story-card-takeaway">
                                     <Quote size={16} className="takeaway-quote-icon" />
-                                    <p>Focus on mastering your skills - they can take you to depths and heights you never imagined.</p>
+                                    <p>{t('home.success.stories.nuri.takeaway')}</p>
                                 </div>
                             </div>
                         </div>
@@ -240,16 +247,16 @@ const Home: React.FC = () => {
                             <div className="story-card-body">
                                 <div className="story-card-badge">
                                     <Settings size={14} />
-                                    <span>Heavy Vehicle Mechanic</span>
+                                    <span>{t('home.success.stories.chameera.badge')}</span>
                                 </div>
                                 <h3 className="story-card-name">Chameera Dushan</h3>
-                                <p className="story-card-subtitle">From CGTTI to Europe: Mastering Heavy Vehicle Mechanics</p>
+                                <p className="story-card-subtitle">{t('home.success.stories.chameera.subtitle')}</p>
                                 <blockquote className="story-card-quote">
-                                    "My career began at CGTTI, and today I work as a Heavy Vehicle Mechanic in Romania, Europe. Working on advanced trucks like MAN and Scania requires strict diagnostics and precision. The world-class, hands-on training I received at CGTTI built the technical foundation and discipline I needed to thrive in this highly systematic European environment."
+                                    {t('home.success.stories.chameera.quote')}
                                 </blockquote>
                                 <div className="story-card-takeaway">
                                     <Quote size={16} className="takeaway-quote-icon" />
-                                    <p>Master your practical skills, and the global industry will always have a place for you.</p>
+                                    <p>{t('home.success.stories.chameera.takeaway')}</p>
                                 </div>
                             </div>
                         </div>
@@ -259,11 +266,11 @@ const Home: React.FC = () => {
                     <div className="story-cta-card-v2">
                         <GraduationCap className="story-cta-icon" size={48} />
                         <div className="story-cta-text">
-                            <h3>Your Success Story Starts Here</h3>
-                            <p>These alumni turned their vocational training into global careers. Your path awaits - take the first step today.</p>
+                            <h3>{t('home.success.cta.title')}</h3>
+                            <p>{t('home.success.cta.subtitle')}</p>
                         </div>
                         <Link to="/pathway-finder" className="cta-btn cta-btn-white">
-                            Start Your Journey <ArrowRight size={16} />
+                            {t('home.success.cta.btn')} <ArrowRight size={16} />
                         </Link>
                     </div>
                 </div>

@@ -27,7 +27,7 @@ const Opportunities: React.FC = () => {
             location: t('opportunities.mock_data.1.location'),
             deadline: '2026-03-15',
             categoryKey: 'IT',
-            type: 'Full-Time',
+            type: t('opportunities.job_types.Full-Time'),
             status: 'urgent',
         },
         {
@@ -37,7 +37,7 @@ const Opportunities: React.FC = () => {
             location: t('opportunities.mock_data.2.location'),
             deadline: '2026-04-01',
             categoryKey: 'Engineering',
-            type: 'Full-Time',
+            type: t('opportunities.job_types.Full-Time'),
             status: 'open',
         },
         {
@@ -47,7 +47,7 @@ const Opportunities: React.FC = () => {
             location: t('opportunities.mock_data.3.location'),
             deadline: '2026-03-25',
             categoryKey: 'Hospitality',
-            type: 'Part-Time',
+            type: t('opportunities.job_types.Part-Time'),
             status: 'open',
         },
         {
@@ -57,7 +57,7 @@ const Opportunities: React.FC = () => {
             location: t('opportunities.mock_data.4.location'),
             deadline: '2026-03-10',
             categoryKey: 'Creative',
-            type: 'Full-Time',
+            type: t('opportunities.job_types.Full-Time'),
             status: 'urgent',
         }
     ];
@@ -71,7 +71,7 @@ const Opportunities: React.FC = () => {
     return (
         <div className="container page-wrapper" style={{ paddingTop: '2rem' }}>
             <div className="page-header" style={{ paddingTop: '1rem' }}>
-                <span className="section-label">Opportunities</span>
+                <span className="section-label">{t('opportunities.section_label')}</span>
                 <h1 className="section-title">{t('opportunities.title')}</h1>
                 <p>{t('opportunities.subtitle')}</p>
             </div>

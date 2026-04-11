@@ -5,7 +5,7 @@ import './PathwayFinder.css';
 
 type Step = 1 | 2 | 3 | 4;
 type ExamLevel = 'OL' | 'AL' | '';
-type OLResult = 'passed' | 'some' | 'failed' | '';
+type OLResult = 'passed' | 'failed' | '';
 
 // ── OL Failed / Some courses ─────────────────────────────────────────────
 const NAITA_COURSES_FAILED = [
@@ -222,10 +222,16 @@ const PathwayFinder: React.FC = () => {
         if (examLevel === 'OL' && olResult === 'passed') {
             return ['GCE A/L', 'Professional Qualification Courses', 'Vocational Qualifications'];
         }
-        if (examLevel === 'AL') {
-            return ['University Education', 'Professional Qualification Courses', 'Vocational Qualifications'];
+        if (examLevel === 'OL' && olResult === 'failed') {
+            return ['Vocational Training', 'Freelancing', 'Own Business'];
         }
-        return ['IT', 'Engineering', 'Business', 'Healthcare', 'Creative', 'Vocational Training'];
+        if (examLevel === 'AL' && olResult === 'failed') {
+            return ['Professional Qualification Courses', 'Vocational Qualifications', 'Freelancing', 'Own Business'];
+        }
+        if (examLevel === 'AL') {
+            return ['University Education', 'Professional Qualification Courses', 'Vocational Qualifications', 'Freelancing', 'Own Business'];
+        }
+        return ['Vocational Training', 'Freelancing', 'Own Business'];
     };
 
     const calculateResults = () => {
@@ -233,8 +239,8 @@ const PathwayFinder: React.FC = () => {
         if (examLevel === 'AL') {
             if (interest === 'University Education') {
                 setResults([{
-                    title: 'University Education',
-                    desc: 'Apply for state university admission via the UGC based on your A/L Z-score. Courses available in Arts, Science, Commerce, and Technology streams at universities island-wide.',
+                    title: t('pathwayFinder.results_data.university_education.title'),
+                    desc: t('pathwayFinder.results_data.university_education.desc'),
                 }]);
                 handleNext();
                 return;
@@ -256,6 +262,22 @@ const PathwayFinder: React.FC = () => {
                     { title: 'NAITA – National Apprentice & Industrial Training Authority', isVocational: true, courses: AL_NAITA_COURSES },
                     { title: 'VTA – Vocational Training Authority', isVocational: true, courses: AL_VTA_COURSES },
                 ]);
+                handleNext();
+                return;
+            }
+            if (interest === 'Freelancing') {
+                setResults([{
+                    title: t('pathwayFinder.results_data.freelancing.title'),
+                    desc: t('pathwayFinder.results_data.freelancing.desc'),
+                }]);
+                handleNext();
+                return;
+            }
+            if (interest === 'Own Business') {
+                setResults([{
+                    title: t('pathwayFinder.results_data.own_business.title'),
+                    desc: t('pathwayFinder.results_data.own_business.desc'),
+                }]);
                 handleNext();
                 return;
             }
@@ -294,12 +316,32 @@ const PathwayFinder: React.FC = () => {
         }
 
         // ── OL + Failed / Some + Vocational Training ─────────────────────────
-        if (examLevel === 'OL' && (olResult === 'failed' || olResult === 'some') && interest === 'Vocational Training') {
+        if (examLevel === 'OL' && olResult === 'failed' && interest === 'Vocational Training') {
             setResults([
                 { title: 'NAITA – National Apprentice & Industrial Training Authority', isVocational: true, courses: NAITA_COURSES_FAILED },
                 { title: 'VTA – Vocational Training Authority', isVocational: true, courses: VTA_COURSES_FAILED },
                 { title: 'Korean Tech (CGTTI / Korea–Sri Lanka Technical Training Centre)', isVocational: true, courses: KOREAN_TECH_COURSES_FAILED },
             ]);
+            handleNext();
+            return;
+        }
+
+        // ── Freelancing (OL failed) ─────────────────────────────────────────
+        if (interest === 'Freelancing') {
+            setResults([{
+                title: t('pathwayFinder.results_data.freelancing.title'),
+                desc: t('pathwayFinder.results_data.freelancing.desc'),
+            }]);
+            handleNext();
+            return;
+        }
+
+        // ── Own Business (OL failed) ────────────────────────────────────────
+        if (interest === 'Own Business') {
+            setResults([{
+                title: t('pathwayFinder.results_data.own_business.title'),
+                desc: t('pathwayFinder.results_data.own_business.desc'),
+            }]);
             handleNext();
             return;
         }
@@ -392,7 +434,6 @@ const PathwayFinder: React.FC = () => {
                             >
                                 <option value="">{t('pathwayFinder.step2.options.default')}</option>
                                 <option value="passed">{t('pathwayFinder.step2.options.passed')}</option>
-                                <option value="some">{t('pathwayFinder.step2.options.some')}</option>
                                 <option value="failed">{t('pathwayFinder.step2.options.failed')}</option>
                             </select>
                         </div>

@@ -1,240 +1,244 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { FileQuestion, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Wrench, Briefcase, Plus, Minus, Calendar } from 'lucide-react';
 import './Resources.css';
 
-const FAQ_CATEGORIES = [
+const getFaqCategories = (t: any) => [
     {
-        category: "🎓 University Path FAQs",
+        category: t('resources.faq_content.univ_path'),
         faqs: [
             {
-                question: "What is the Z-score and how does it affect university selection?",
+                question: t('resources.faq_content.q1'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>The Z-score is a standardized score used in Sri Lanka to rank students for admission to state universities. It is calculated based on a student’s performance in the G.C.E. Advanced Level (A/L) examination compared to other students in the same stream.</li>
-                        <li>The University Grants Commission uses the Z-score to determine eligibility and course selection. Each degree program has a minimum Z-score requirement, which varies every year depending on competition and district quota allocation.</li>
-                        <li>A higher Z-score increases the chances of being selected for competitive degree programs.</li>
+                        <li>{t('resources.faq_content.q1_a1')}</li>
+                        <li>{t('resources.faq_content.q1_a2')}</li>
+                        <li>{t('resources.faq_content.q1_a3')}</li>
                     </ul>
                 )
             },
             {
-                question: "Can I enter university if I repeat A/Ls?",
+                question: t('resources.faq_content.q2'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>Yes. Students are allowed to repeat the A/L examination to improve their results and Z-score. The best attempt (according to current regulations) will be considered for university admission.</li>
-                        <li>However, students should verify updated admission policies through the University Grants Commission before making a decision.</li>
-                        <li>Repeating A/Ls can improve opportunities, but students should also consider alternative pathways while preparing.</li>
+                        <li>{t('resources.faq_content.q2_a1')}</li>
+                        <li>{t('resources.faq_content.q2_a2')}</li>
+                        <li>{t('resources.faq_content.q2_a3')}</li>
                     </ul>
                 )
             },
             {
-                question: "What are alternative options if I don’t get selected for a state university?",
+                question: t('resources.faq_content.q3'),
                 answer: (
                     <div className="text-left space-y-2">
-                        <p>If you are not selected for a state university, there are several alternative pathways:</p>
+                        <p>{t('resources.faq_content.q3_a1')}</p>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Higher National Diploma programs at Sri Lanka Institute of Advanced Technological Education</li>
-                            <li>Distance learning through Open University of Sri Lanka</li>
-                            <li>Accredited vocational qualifications under Tertiary and Vocational Education Commission</li>
-                            <li>Private higher education institutions</li>
-                            <li>Professional courses (IT, Accounting, Engineering, etc.)</li>
+                            <li>{t('resources.faq_content.q3_a2')}</li>
+                            <li>{t('resources.faq_content.q3_a3')}</li>
+                            <li>{t('resources.faq_content.q3_a4')}</li>
+                            <li>{t('resources.faq_content.q3_a5')}</li>
+                            <li>{t('resources.faq_content.q3_a6')}</li>
                         </ul>
-                        <p className="pt-2">Not getting selected for a state university does not mean the end of higher education opportunities.</p>
+                        <p className="pt-2">{t('resources.faq_content.q3_a7')}</p>
                     </div>
                 )
             }
         ]
     },
     {
-        category: "🛠 Vocational Training FAQs",
+        category: t('resources.faq_content.voc_path'),
         faqs: [
             {
-                question: "Are vocational qualifications recognized internationally?",
+                question: t('resources.faq_content.q4'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>Many vocational qualifications in Sri Lanka are structured under the National Vocational Qualification (NVQ) framework, regulated by the Tertiary and Vocational Education Commission.</li>
-                        <li>Certain NVQ qualifications are recognized locally and can support international employment, especially in technical and skilled sectors. However, international recognition may depend on the country and industry.</li>
-                        <li>Students are advised to check the specific recognition status of their chosen qualification before enrolling.</li>
+                        <li>{t('resources.faq_content.q4_a1')}</li>
+                        <li>{t('resources.faq_content.q4_a2')}</li>
+                        <li>{t('resources.faq_content.q4_a3')}</li>
                     </ul>
                 )
             },
             {
-                question: "What is NVQ and how does it work?",
+                question: t('resources.faq_content.q5'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>NVQ (National Vocational Qualification) is a structured qualification framework in Sri Lanka that certifies practical and technical skills.</li>
-                        <li>It is regulated by the Tertiary and Vocational Education Commission and delivered through institutions such as the Vocational Training Authority and the National Apprentice and Industrial Training Authority.</li>
-                        <li>NVQ levels range from Level 1 (basic skills) to Level 7 (degree-equivalent qualifications). Students are assessed based on competency and practical ability rather than only written examinations.</li>
+                        <li>{t('resources.faq_content.q5_a1')}</li>
+                        <li>{t('resources.faq_content.q5_a2')}</li>
+                        <li>{t('resources.faq_content.q5_a3')}</li>
                     </ul>
                 )
             },
             {
-                question: "Can I go to university after completing a vocational qualification?",
+                question: t('resources.faq_content.q6'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>Yes. Certain higher-level NVQ qualifications (such as NVQ Level 5 or 6) may provide pathways to degree programs in selected fields.</li>
-                        <li>Some institutions allow credit transfers or lateral entry into degree programs. However, eligibility depends on the institution and course requirements.</li>
-                        <li>Students should confirm progression opportunities with the relevant university or institution before enrolling in a vocational program.</li>
+                        <li>{t('resources.faq_content.q6_a1')}</li>
+                        <li>{t('resources.faq_content.q6_a2')}</li>
+                        <li>{t('resources.faq_content.q6_a3')}</li>
                     </ul>
                 )
             }
         ]
     },
     {
-        category: "💼 Career FAQs",
+        category: t('resources.faq_content.career_path'),
         faqs: [
             {
-                question: "How do I choose between university and vocational training?",
+                question: t('resources.faq_content.q7'),
                 answer: (
                     <div className="text-left space-y-2">
-                        <p>Choosing between university and vocational training depends on:</p>
+                        <p>{t('resources.faq_content.q7_a1')}</p>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Your career goals</li>
-                            <li>Your learning style</li>
-                            <li>Financial situation</li>
-                            <li>Interest in theoretical vs practical learning</li>
+                            <li>{t('resources.faq_content.q7_a2')}</li>
+                            <li>{t('resources.faq_content.q7_a3')}</li>
+                            <li>{t('resources.faq_content.q7_a4')}</li>
+                            <li>{t('resources.faq_content.q7_a5')}</li>
                         </ul>
-                        <p className="pt-2">University education focuses more on academic and theoretical knowledge, while vocational training emphasizes hands-on skills and direct industry readiness.</p>
-                        <p>Students are encouraged to research both pathways carefully and consider long-term career goals before deciding.</p>
+                        <p className="pt-2">{t('resources.faq_content.q7_a6')}</p>
+                        <p>{t('resources.faq_content.q7_a7')}</p>
                     </div>
                 )
             },
             {
-                question: "What are high-demand careers in Sri Lanka?",
+                question: t('resources.faq_content.q8'),
                 answer: (
                     <div className="text-left space-y-2">
-                        <p>High-demand career fields in Sri Lanka currently include:</p>
+                        <p>{t('resources.faq_content.q8_a1')}</p>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Information Technology and Software Development</li>
-                            <li>Engineering and Construction</li>
-                            <li>Healthcare and Nursing</li>
-                            <li>Tourism and Hospitality</li>
-                            <li>Skilled Technical Trades (Electricians, Automotive Technicians, etc.)</li>
+                            <li>{t('resources.faq_content.q8_a2')}</li>
+                            <li>{t('resources.faq_content.q8_a3')}</li>
+                            <li>{t('resources.faq_content.q8_a4')}</li>
+                            <li>{t('resources.faq_content.q8_a5')}</li>
+                            <li>{t('resources.faq_content.q8_a6')}</li>
                         </ul>
-                        <p className="pt-2">Market demand can change over time, so students should stay updated through official sources such as the Ministry of Labor.</p>
+                        <p className="pt-2">{t('resources.faq_content.q8_a7')}</p>
                     </div>
                 )
             },
             {
-                question: "Are there government scholarships available?",
+                question: t('resources.faq_content.q9'),
                 answer: (
                     <div className="text-left space-y-2">
-                        <p>Yes. Government scholarships and financial assistance programs are available for eligible students.</p>
-                        <p>Scholarships may be offered through:</p>
+                        <p>{t('resources.faq_content.q9_a1')}</p>
+                        <p>{t('resources.faq_content.q9_a2')}</p>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>State universities</li>
-                            <li>Government ministries</li>
-                            <li>Provincial councils</li>
-                            <li>Foreign-funded programs</li>
+                            <li>{t('resources.faq_content.q9_a3')}</li>
+                            <li>{t('resources.faq_content.q9_a4')}</li>
+                            <li>{t('resources.faq_content.q9_a5')}</li>
+                            <li>{t('resources.faq_content.q9_a6')}</li>
                         </ul>
-                        <p className="pt-2">Students should regularly check announcements from the Ministry of Education and the University Grants Commission for updated information.</p>
+                        <p className="pt-2">{t('resources.faq_content.q9_a7')}</p>
                     </div>
                 )
             },
             {
-                question: "Can I study part-time while working?",
+                question: t('resources.faq_content.q10'),
                 answer: (
                     <ul className="list-disc pl-5 space-y-2 text-left">
-                        <li>Yes. Several institutions in Sri Lanka offer part-time, evening, weekend, and distance learning programs.</li>
-                        <li>For example, the Open University of Sri Lanka provides flexible learning options for working individuals.</li>
-                        <li>Balancing work and study requires strong time management, but it is a practical option for many students who need financial independence.</li>
+                        <li>{t('resources.faq_content.q10_a1')}</li>
+                        <li>{t('resources.faq_content.q10_a2')}</li>
+                        <li>{t('resources.faq_content.q10_a3')}</li>
                     </ul>
                 )
             }
         ]
     }
 ];
-
-const TIMELINE_DATA = [
+/* REMOVED_OLD_FAQ */const getTimelineData = (t: any) => [
     {
-        title: "Month 1: Understand Results & Explore Options",
+        title: t('resources.timeline_data.step1.title'),
         danger: false,
         items: [
-            "Check A/L results and Z-score",
-            "Compare previous years’ cut-off marks",
-            "Visit the University Grants Commission website",
-            "List eligible degree programs",
-            "Explore alternative pathways (HND, vocational, private)",
-            "Discuss options with parents or teachers"
+            t('resources.timeline_data.step1.lines.0'),
+            t('resources.timeline_data.step1.lines.1'),
+            t('resources.timeline_data.step1.lines.2'),
+            t('resources.timeline_data.step1.lines.3'),
+            t('resources.timeline_data.step1.lines.4'),
+            t('resources.timeline_data.step1.lines.5')
         ]
     },
     {
-        title: "Month 2: Research & Compare Pathways",
+        title: t('resources.timeline_data.step2.title'),
         danger: false,
         items: [
-            "Compare university vs vocational training",
-            "Research private institutions and accreditation",
-            "Understand NVQ levels and progression paths",
-            "Check apprenticeship opportunities",
-            "Look for government or foreign scholarships"
+            t('resources.timeline_data.step2.lines.0'),
+            t('resources.timeline_data.step2.lines.1'),
+            t('resources.timeline_data.step2.lines.2'),
+            t('resources.timeline_data.step2.lines.3'),
+            t('resources.timeline_data.step2.lines.4')
         ]
     },
     {
-        title: "Month 3: Prepare & Submit Applications",
+        title: t('resources.timeline_data.step3.title'),
         danger: false,
         items: [
-            "Prepare documents (A/L result sheet, NIC, birth certificate)",
-            "Register and apply through official university portals",
-            "Apply for vocational, private, or distance learning programs",
-            "Submit scholarship applications before deadlines"
+            t('resources.timeline_data.step3.lines.0'),
+            t('resources.timeline_data.step3.lines.1'),
+            t('resources.timeline_data.step3.lines.2'),
+            t('resources.timeline_data.step3.lines.3')
         ]
     },
     {
-        title: "Month 4–5: Skill Development Phase",
+        title: t('resources.timeline_data.step4.title'),
         danger: false,
         items: [
-            "Improve English communication skills",
-            "Develop basic IT and computer skills",
-            "Follow short certificate or online courses",
-            "Volunteer or complete internships if possible",
-            "Build confidence and workplace readiness"
+            t('resources.timeline_data.step4.lines.0'),
+            t('resources.timeline_data.step4.lines.1'),
+            t('resources.timeline_data.step4.lines.2'),
+            t('resources.timeline_data.step4.lines.3'),
+            t('resources.timeline_data.step4.lines.4')
         ]
     },
     {
-        title: "Month 6+: Decision & Transition Phase",
+        title: t('resources.timeline_data.step5.title'),
         danger: false,
         items: [
-            "Confirm and accept selected admissions",
-            "Plan accommodation, transport, and finances",
-            "Prepare mentally for university or training life",
-            "Set personal and career goals for the next year"
+            t('resources.timeline_data.step5.lines.0'),
+            t('resources.timeline_data.step5.lines.1'),
+            t('resources.timeline_data.step5.lines.2'),
+            t('resources.timeline_data.step5.lines.3')
         ]
     },
     {
-        title: "Common Mistakes to Avoid",
+        title: t('resources.timeline_data.step6.title'),
         danger: true,
         items: [
-            "Waiting without researching options",
-            "Choosing a path only based on friends’ decisions",
-            "Ignoring vocational and technical pathways",
-            "Not checking course recognition",
-            "Missing application deadlines"
+            t('resources.timeline_data.step6.lines.0'),
+            t('resources.timeline_data.step6.lines.1'),
+            t('resources.timeline_data.step6.lines.2'),
+            t('resources.timeline_data.step6.lines.3'),
+            t('resources.timeline_data.step6.lines.4')
         ]
     }
 ];
+/* REMOVED_OLD_TIMELINE */
 
 const Resources: React.FC = () => {
+    const { t } = useLanguage();
+    const FAQ_CATEGORIES = getFaqCategories(t);
+    const TIMELINE_DATA = getTimelineData(t);
     const [openFaq, setOpenFaq] = useState<string | null>('0-0');
     const [openTimeline, setOpenTimeline] = useState<number | null>(0);
 
     return (
         <div className="container page-wrapper" style={{ paddingTop: '2rem' }}>
             <div className="page-header" style={{ paddingTop: '1rem' }}>
-                <span className="section-label">Resources</span>
-                <h1 className="section-title">Awareness &amp; Guidance Resources</h1>
-                <p>Explore articles, videos, and FAQs designed to help you make the right choice for your future.</p>
+                <span className="section-label">{t("resources.page.label")}</span>
+                <h1 className="section-title">{t("resources.page.title")}</h1>
+                <p>{t("resources.page.desc")}</p>
             </div>
 
             {/* Myths vs Facts section */}
             <section className="mb-12">
-                <h2 className="resources-section-heading">Common Myths vs Facts</h2>
+                <h2 className="resources-section-heading">{t("resources.myths.title")}</h2>
                 <div className="grid-2-cols">
                     <div className="card-box bg-red-light">
-                        <h3 className="text-danger mb-2">Myth: University is the only path to success.</h3>
-                        <p><strong>Fact:</strong> Over 60% of modern high-paying jobs in IT and technical fields require skills and certifications over traditional degrees.</p>
+                        <h3 className="text-danger mb-2">{t("resources.myths.univ.myth")}</h3>
+                        <p><strong>Fact:</strong> {t("resources.myths.univ.fact")}</p>
                     </div>
                     <div className="card-box bg-green-light">
-                        <h3 className="text-success mb-2">Myth: Vocational training is for dropouts.</h3>
-                        <p><strong>Fact:</strong> The NVQ (National Vocational Qualification) framework is internationally recognized and can even lead to a degree (NVQ Level 7).</p>
+                        <h3 className="text-success mb-2">{t("resources.myths.voc.myth")}</h3>
+                        <p><strong>Fact:</strong> {t("resources.myths.voc.fact")}</p>
                     </div>
                 </div>
             </section>
@@ -242,9 +246,9 @@ const Resources: React.FC = () => {
             {/* Timeline Checklist section */}
             <section className="mb-12">
                 <div className="timeline-section">
-                    <h2 className="resources-section-heading mb-2"><Calendar size={22} /> After A/L Timeline Checklist</h2>
+                    <h2 className="resources-section-heading mb-2"><Calendar size={22} /> {t("resources.timeline.title")}</h2>
                     <p className="timeline-intro">
-                        This step-by-step timeline helps Sri Lankan school leavers plan their next steps after receiving A/L results.
+                        {t("resources.timeline.desc")}
                     </p>
 
                     <div className="timeline-accordion mt-6">
@@ -270,14 +274,14 @@ const Resources: React.FC = () => {
                         ))}
                     </div>
                     <p className="timeline-note mt-6">
-                        This timeline is provided for guidance purposes only. Students are advised to verify information through official institutions before making final decisions.
+                        {t("resources.timeline.note")}
                     </p>
                 </div>
             </section>
 
             {/* Video Guides */}
             <section className="mb-12">
-                <h2 className="resources-section-heading">Video Guides</h2>
+                <h2 className="resources-section-heading">{t("resources.videos.title")}</h2>
                 <div className="grid-3-cols">
                     {[
                         {
@@ -312,7 +316,7 @@ const Resources: React.FC = () => {
 
             {/* Official Education & Career Resource Links */}
             <section className="mb-12">
-                <h2 className="resources-section-heading"><ExternalLink size={22} /> Official Education &amp; Career Resources</h2>
+                <h2 className="resources-section-heading"><ExternalLink size={22} /> {t("resources.official_links.title")}</h2>
                 <div className="official-links-grid">
 
                     {/* Category 1 – University & Higher Education */}
@@ -389,7 +393,7 @@ const Resources: React.FC = () => {
 
             {/* FAQs */}
             <section className="mb-8">
-                <h2 className="resources-section-heading"><FileQuestion size={22} /> Frequently Asked Questions</h2>
+                <h2 className="resources-section-heading"><FileQuestion size={22} /> {t("resources.faqs.title")}</h2>
 
                 <div className="faq-categories space-y-8">
                     {FAQ_CATEGORIES.map((categoryGroup, catIdx) => (

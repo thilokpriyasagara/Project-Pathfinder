@@ -53,7 +53,44 @@
     "btn_all_resources": "View All Resources",
     "success_title": "Student Success Stories",
     "success_quote_1": "From the resource page",
-    "success_quote_2": "From the resource page"
+    "success_quote_2": "From the resource page",
+    "labels": {
+      "why_it_matters": "Why It Matters",
+      "explore_fields": "Explore Fields",
+      "resources": "Resources",
+      "success_stories": "Success Stories"
+    },
+    "insights_cta": {
+      "read_more": "Read More"
+    },
+    "success": {
+      "section_sub": "Real stories from alumni who turned vocational training into global careers.",
+      "stories": {
+        "imesh": {
+          "badge": "Culinary Entrepreneur",
+          "subtitle": "From Dubai Kitchens to Sri Lankan Entrepreneur",
+          "quote": "My journey started with a simple passion for cooking, which eventually led me to the fast-paced, high-pressure commercial kitchens of Dubai. For 12 years, I worked in top-tier restaurants, mastering the culinary arts. Today, I've brought all that international experience back home to Sri Lanka to build my own restaurant.",
+          "takeaway": "A vocational skill like the culinary arts, paired with discipline and hard work, can take you around the world."
+        },
+        "nuri": {
+          "badge": "Welding Specialist & Mentor",
+          "subtitle": "From NAITA Sparks to Independent Woman",
+          "quote": "My journey began with the first sparks of a welding torch at NAITA, where I discovered both my passion and my strength in a field many didn't expect me to enter. That experience gave me the technical foundation and confidence to take my next step — starting my own welding shop.",
+          "takeaway": "Building my business wasn't easy, but it taught me resilience, independence, and the value of skilled craftsmanship. Today, I take pride not only in running my own workshop but also in proving that with the right skills and determination, it's possible to create your own path and succeed."
+        },
+        "chameera": {
+          "badge": "Heavy Vehicle Mechanic",
+          "subtitle": "From CGTTI to Europe: Mastering Heavy Vehicle Mechanics",
+          "quote": "My career began at CGTTI, and today I work as a Heavy Vehicle Mechanic in Romania, Europe. Working on advanced trucks like MAN and Scania requires strict diagnostics and precision. The world-class, hands-on training I received at CGTTI built the technical foundation and discipline I needed to thrive in this highly systematic European environment.",
+          "takeaway": "Master your practical skills, and the global industry will always have a place for you."
+        }
+      },
+      "cta": {
+        "title": "Your Success Story Starts Here",
+        "subtitle": "These alumni turned their vocational training into global careers. Your path awaits - take the first step today.",
+        "btn": "Start Your Journey"
+      }
+    }
   },
   "about": {
     "title": "About PathFinder",
@@ -360,6 +397,11 @@
         "institute": "National Youth Services Council (NYSC)",
         "location": "Maharagama"
       }
+    },
+    "section_label": "Opportunities",
+    "job_types": {
+      "Full-Time": "Full-Time",
+      "Part-Time": "Part-Time"
     }
   },
   "pathwayFinder": {
@@ -410,7 +452,9 @@
         "GCE A/L": "GCE A/L",
         "Professional Qualification Courses": "Professional Qualification Courses",
         "Vocational Qualifications": "Vocational Qualifications",
-        "University Education": "University Education"
+        "University Education": "University Education",
+        "Freelancing": "Freelancing",
+        "Own Business": "Own Business"
       },
       "back": "Back",
       "next": "Show My Pathways"
@@ -455,6 +499,172 @@
       "fallback_ol": {
         "title": "Vocational Training Authority (VTA)",
         "desc": "Find certificates in various trades starting at NVQ Level 3."
+      },
+      "university_education": {
+        "title": "University Education",
+        "desc": "Apply for state university admission via the UGC based on your A/L Z-score. Courses available in Arts, Science, Commerce, and Technology streams at universities island-wide."
+      },
+      "freelancing": {
+        "title": "Freelancing",
+        "desc": "Start your freelancing career by building skills in areas like graphic design, web development, content writing, digital marketing, and more. Platforms like Fiverr, Upwork, and Freelancer offer opportunities to work with clients worldwide."
+      },
+      "own_business": {
+        "title": "Own Business",
+        "desc": "Start your own business venture! Explore entrepreneurship opportunities, learn about business planning, marketing, finance, and management. Government programs and private incubators can help you launch and grow your business."
+      }
+    }
+  },
+  "resources": {
+    "page": {
+      "label": "Resources",
+      "title": "Awareness & Guidance Resources",
+      "desc": "Explore articles, videos, and FAQs designed to help you make the right choice for your future."
+    },
+    "myths": {
+      "title": "Common Myths vs Facts",
+      "univ": {
+        "myth": "Myth: University is the only path to success.",
+        "fact": "Over 60% of modern high-paying jobs in IT and technical fields require skills and certifications over traditional degrees."
+      },
+      "voc": {
+        "myth": "Myth: Vocational training is for dropouts.",
+        "fact": "The NVQ (National Vocational Qualification) framework is internationally recognized and can even lead to a degree (NVQ Level 7)."
+      }
+    },
+    "timeline": {
+      "title": "After A/L Timeline Checklist",
+      "desc": "This step-by-step timeline helps Sri Lankan school leavers plan their next steps after receiving A/L results.",
+      "note": "This timeline is provided for guidance purposes only. Students are advised to verify information through official institutions before making final decisions."
+    },
+    "videos": {
+      "title": "Video Guides"
+    },
+    "official_links": {
+      "title": "Official Education & Career Resources"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions"
+    },
+    "faq_content": {
+      "univ_path": "🎓 University Path FAQs",
+      "voc_path": "🛠 Vocational Training FAQs",
+      "career_path": "💼 Career FAQs",
+      "q1": "What is the Z-score and how does it affect university selection?",
+      "q1_a1": "The Z-score is a standardized score used in Sri Lanka to rank students for admission to state universities. It is calculated based on a student’s performance in the G.C.E. Advanced Level (A/L) examination compared to other students in the same stream.",
+      "q1_a2": "The University Grants Commission uses the Z-score to determine eligibility and course selection. Each degree program has a minimum Z-score requirement, which varies every year depending on competition and district quota allocation.",
+      "q1_a3": "A higher Z-score increases the chances of being selected for competitive degree programs.",
+      "q2": "Can I enter university if I repeat A/Ls?",
+      "q2_a1": "Yes. Students are allowed to repeat the A/L examination to improve their results and Z-score. The best attempt (according to current regulations) will be considered for university admission.",
+      "q2_a2": "However, students should verify updated admission policies through the University Grants Commission before making a decision.",
+      "q2_a3": "Repeating A/Ls can improve opportunities, but students should also consider alternative pathways while preparing.",
+      "q3": "What are alternative options if I don’t get selected for a state university?",
+      "q3_a1": "If you are not selected for a state university, there are several alternative pathways:",
+      "q3_a2": "Higher National Diploma programs at Sri Lanka Institute of Advanced Technological Education",
+      "q3_a3": "Distance learning through Open University of Sri Lanka",
+      "q3_a4": "Accredited vocational qualifications under Tertiary and Vocational Education Commission",
+      "q3_a5": "Private higher education institutions",
+      "q3_a6": "Professional courses (IT, Accounting, Engineering, etc.)",
+      "q3_a7": "Not getting selected for a state university does not mean the end of higher education opportunities.",
+      "q4": "Are vocational qualifications recognized internationally?",
+      "q4_a1": "Many vocational qualifications in Sri Lanka are structured under the National Vocational Qualification (NVQ) framework, regulated by the Tertiary and Vocational Education Commission.",
+      "q4_a2": "Certain NVQ qualifications are recognized locally and can support international employment, especially in technical and skilled sectors. However, international recognition may depend on the country and industry.",
+      "q4_a3": "Students are advised to check the specific recognition status of their chosen qualification before enrolling.",
+      "q5": "What is NVQ and how does it work?",
+      "q5_a1": "NVQ (National Vocational Qualification) is a structured qualification framework in Sri Lanka that certifies practical and technical skills.",
+      "q5_a2": "It is regulated by the Tertiary and Vocational Education Commission and delivered through institutions such as the Vocational Training Authority and the National Apprentice and Industrial Training Authority.",
+      "q5_a3": "NVQ levels range from Level 1 (basic skills) to Level 7 (degree-equivalent qualifications). Students are assessed based on competency and practical ability rather than only written examinations.",
+      "q6": "Can I go to university after completing a vocational qualification?",
+      "q6_a1": "Yes. Certain higher-level NVQ qualifications (such as NVQ Level 5 or 6) may provide pathways to degree programs in selected fields.",
+      "q6_a2": "Some institutions allow credit transfers or lateral entry into degree programs. However, eligibility depends on the institution and course requirements.",
+      "q6_a3": "Students should confirm progression opportunities with the relevant university or institution before enrolling in a vocational program.",
+      "q7": "How do I choose between university and vocational training?",
+      "q7_a1": "Choosing between university and vocational training depends on:",
+      "q7_a2": "Your career goals",
+      "q7_a3": "Your learning style",
+      "q7_a4": "Financial situation",
+      "q7_a5": "Interest in theoretical vs practical learning",
+      "q7_a6": "University education focuses more on academic and theoretical knowledge, while vocational training emphasizes hands-on skills and direct industry readiness.",
+      "q7_a7": "Students are encouraged to research both pathways carefully and consider long-term career goals before deciding.",
+      "q8": "What are high-demand careers in Sri Lanka?",
+      "q8_a1": "High-demand career fields in Sri Lanka currently include:",
+      "q8_a2": "Information Technology and Software Development",
+      "q8_a3": "Engineering and Construction",
+      "q8_a4": "Healthcare and Nursing",
+      "q8_a5": "Tourism and Hospitality",
+      "q8_a6": "Skilled Technical Trades (Electricians, Automotive Technicians, etc.)",
+      "q8_a7": "Market demand can change over time, so students should stay updated through official sources such as the Ministry of Labor.",
+      "q9": "Are there government scholarships available?",
+      "q9_a1": "Yes. Government scholarships and financial assistance programs are available for eligible students.",
+      "q9_a2": "Scholarships may be offered through:",
+      "q9_a3": "State universities",
+      "q9_a4": "Government ministries",
+      "q9_a5": "Provincial councils",
+      "q9_a6": "Foreign-funded programs",
+      "q9_a7": "Students should regularly check announcements from the Ministry of Education and the University Grants Commission for updated information.",
+      "q10": "Can I study part-time while working?",
+      "q10_a1": "Yes. Several institutions in Sri Lanka offer part-time, evening, weekend, and distance learning programs.",
+      "q10_a2": "For example, the Open University of Sri Lanka provides flexible learning options for working individuals.",
+      "q10_a3": "Balancing work and study requires strong time management, but it is a practical option for many students who need financial independence."
+    },
+    "timeline_data": {
+      "step1": {
+        "title": "Month 1: Understand Results & Explore Options",
+        "lines": [
+          "Check A/L results and Z-score",
+          "Compare previous years’ cut-off marks",
+          "Visit the University Grants Commission website",
+          "List eligible degree programs",
+          "Explore alternative pathways (HND, vocational, private)",
+          "Discuss options with parents or teachers"
+        ]
+      },
+      "step2": {
+        "title": "Month 2: Research & Compare Pathways",
+        "lines": [
+          "Compare university vs vocational training",
+          "Research private institutions and accreditation",
+          "Understand NVQ levels and progression paths",
+          "Check apprenticeship opportunities",
+          "Look for government or foreign scholarships"
+        ]
+      },
+      "step3": {
+        "title": "Month 3: Prepare & Submit Applications",
+        "lines": [
+          "Prepare documents (A/L result sheet, NIC, birth certificate)",
+          "Register and apply through official university portals",
+          "Apply for vocational, private, or distance learning programs",
+          "Submit scholarship applications before deadlines"
+        ]
+      },
+      "step4": {
+        "title": "Month 4–5: Skill Development Phase",
+        "lines": [
+          "Improve English communication skills",
+          "Develop basic IT and computer skills",
+          "Follow short certificate or online courses",
+          "Volunteer or complete internships if possible",
+          "Build confidence and workplace readiness"
+        ]
+      },
+      "step5": {
+        "title": "Month 6+: Decision & Transition Phase",
+        "lines": [
+          "Confirm and accept selected admissions",
+          "Plan accommodation, transport, and finances",
+          "Prepare mentally for university or training life",
+          "Set personal and career goals for the next year"
+        ]
+      },
+      "step6": {
+        "title": "Common Mistakes to Avoid",
+        "lines": [
+          "Waiting without researching options",
+          "Choosing a path only based on friends’ decisions",
+          "Ignoring vocational and technical pathways",
+          "Not checking course recognition",
+          "Missing application deadlines"
+        ]
       }
     }
   }
